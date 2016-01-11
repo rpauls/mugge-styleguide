@@ -1,0 +1,68 @@
+/* ----------- MG-BASE-MENU ----------- */
+
+ 
+    .mg-menu {
+        width: 256px;
+        height: 100%;
+        float: left;
+        color: $mg-bright-1;
+        background-color: $mg-dark-2;
+        
+        .mg-menu-link {
+            @include font-size(19px);
+            color: $mg-grey-4;
+            padding: 16px 20px;
+            
+            &:hover, &:focus {
+                color: $mg-bright-0;
+                background-color: $mg-dark-3;
+            }
+            
+            &:visited {
+                color: $mg-grey-4;
+                background-color: none;
+            }
+            
+            &.mg-menu-link-active, &:active {
+                color: $mg-purple;
+                
+                &:hover {
+                    color: $mg-purple;
+                    background-color: $mg-dark-2;
+                }
+            }
+            
+            .mg-menu-icon {
+                padding-right: 16px;
+            }
+        }
+        
+       .mg-menu-close {
+            position: absolute;
+            top: 4px;
+            left: 232px;
+            @include font-size(12px);
+            color: $mg-grey-0;
+        }
+        
+        .mg-menu-seperator {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            margin: 0.8em 12px 1.2em 12px;
+            border-top: 1px solid $mg-dark-4;
+        }
+        
+        .mg-menu-heading {
+            color: $mg-grey-4;
+            background-color: $mg-dark-1;
+            background-image: url(../img/logo.png);
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-size: 215px;
+            margin: 0;
+            min-height: 58px;
+            font-size: 18px;
+            border-bottom: 2px solid $mg-purple;
+        }
+    }

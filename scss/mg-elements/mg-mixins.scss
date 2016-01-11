@@ -1,0 +1,134 @@
+/* ----------- Mixins ----------- */
+ 
+ /*
+  * --- REM FONT SIZE WITh PX FALLBACK ---
+  *
+  * DESCRIPTION:
+  *
+  *     Rem is similar to the em value, but instead of being 
+  *     relative to the parent element it’srelative to the 
+  *     font-size set in the <html>.
+  *
+  * EXAMPLE:
+  *
+  *     p {
+  *         @include font-size(14px);
+  *     }
+  *
+  */
+ 
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+
+ /*
+  * --- TRANSITIONS ---
+  *
+  * DESCRIPTION:
+  *
+  *     As with animations, transitions also make your code 
+  *     quite bloated which can hurt the readability. 
+  *     But this is also solved by using a mixin for it.
+  *
+  * EXAMPLE:
+  *
+  *     a {
+  *         color: gray;
+  *         @include mg-transition(color .3s ease);
+  *         &:hover {
+  *             color: black;
+  *         }
+  *     }
+  *
+  */
+  
+@mixin mg-transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+
+ /*
+  * --- ANIMATIONS AND KEYFRAMES ---
+  *
+  * DESCRIPTION:
+  *
+  *     Animations are always a pain to create with
+  *     all the vendor prefixes and what not. 
+  *     But with the help of this mixin it will boil 
+  *     down to just a few lines of code.
+  *
+  * EXAMPLE:
+  *
+  *     @include mg-keyframes(slide-down) {
+  *         0% { opacity: 1; }
+  *         90% { opacity: 0; }
+  *     }
+  *
+  *     .element {
+  *         width: 100px;
+  *         height: 100px;
+  *         background: black;
+  *         @include mg-animation('slide-down 5s 3');
+  *     }
+  *
+  */
+  
+@mixin mg-keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+}
+
+
+ /*
+  * --- CROSS BROWSER OPACITY ---
+  *
+  * DESCRIPTION:
+  *
+  *     This mixin ensures cross browser opacity all 
+  *     the way down to Internet Explorer 5.
+  *
+  * EXAMPLE:
+  *
+  *     .faded-text {
+  *         @include opacity(0.8);
+  *     }
+  *
+  */
+  
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}

@@ -1,0 +1,17 @@
+/* ----------- MG-BASE ----------- */
+
+    .mg-content {
+        width: auto;
+        max-width: 100%;
+        margin-left: 256px;
+        
+        @import './mg-base-content-header.scss';
+        
+        .mg-row {
+            margin: 10px 10px 0 10px ;
+            padding: 10px 15px 10px 15px;
+            background-color: $mg-white;
+            border: 1px solid $mg-bright-2;
+            
+        }
+    }

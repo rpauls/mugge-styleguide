@@ -1,0 +1,19 @@
+/* ----------- MG-BASE ----------- */
+     
+        .mg-header {
+            width: auto;
+            max-width: 100%;
+            height: 64px;
+            background-color: $mg-purple;
+            overflow: hidden;
+            
+            .mg-header-title {
+                width: auto;
+                margin: 0;
+                padding: 16px 28px;
+                padding: calculateRem(16px) calculateRem(28px);
+                color: $mg-bright-0;
+                @include font-size(28px);
+            }
+            
+        }

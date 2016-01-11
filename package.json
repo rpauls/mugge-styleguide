@@ -1,0 +1,16 @@
+{
+  "name": "mugge-styleguide",
+  "version": "1.0.0",
+  "description": "Visual style guide for MuggeKMS by ArcHex Technology.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/mugge.scss public/css/mugge.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Robert K. Pauls <r.pauls@robertkpauls.com> (http://www.robertkpauls.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.8.1"
+  }
+}

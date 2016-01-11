@@ -1,0 +1,11 @@
+/* ----------- MG-BASE ----------- */
+
+#mugge {
+    height: 100%;
+    width: 100%;
+    background-color: $mg-bright-0;
+    
+    @import './mg-base-menu.scss';
+    @import './mg-base-content.scss';
+    
+}

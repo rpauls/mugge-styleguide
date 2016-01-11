@@ -1,0 +1,26 @@
+/* 
+ *  ----------------------------------------
+ *      The Main Mugge SCSS Files serves 
+ *      only to combine all sub-files. 
+ *  ----------------------------------------
+ */
+ 
+ /*
+  *                 --- NOTE ---
+  *
+  *     " mg-* " serves as a universal class prefix 
+  *     for all in MuggeKMS used classes.
+  *
+  */
+  
+/* ------- 3RD PARTY ELEMENTS -------- */ 
+@import './ext-font/open-iconic.scss';
+@import './ext-font/lineto-akkurat-web.scss';
+
+/* ------- MUGGE ELEMENTS -------- */ 
+@import './mg-elements/mg-main.scss';
+@import './mg-elements/mg-mixins.scss';
+@import './mg-elements/mg-colors.scss';
+
+/* -------- MUGGE VIEWS ---------- */
+@import './mg-views/mg-base.scss';
