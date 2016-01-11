@@ -864,6 +864,9 @@ html {
     color: #EEEEEE;
     background-color: #333333;
     overflow-y: hidden;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.33);
     /* Size-spezific menu elements (BIG)*/
     /* Size-spezific menu elements (SMALL)*/
     /* Universal menu elements */ }
@@ -918,77 +921,81 @@ html {
       background-position: center;
       background-size: 215px;
       margin: 0;
-      min-height: 58px;
+      padding: 3px 18px 3px 18px;
+      height: 58px;
       font-size: 18px;
       border-bottom: 2px solid #5856D6; }
-  #mugge .mg-menu {
+  #mugge .mg-sidebar {
     height: 100%;
     float: left;
     color: #EEEEEE;
-    background-color: #333333;
+    background-color: #FFFFFF;
     overflow-y: hidden;
-    /* Size-spezific menu elements (BIG)*/
-    /* Size-spezific menu elements (SMALL)*/
+    position: absolute;
+    z-index: 888;
+    margin-left: 64px;
+    width: 192px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.33);
     /* Universal menu elements */ }
-    #mugge .mg-menu.mg-menu-big {
-      width: 256px; }
-    #mugge .mg-menu.mg-menu-small {
-      width: 64px; }
-      #mugge .mg-menu.mg-menu-small .mg-menu-heading {
-        background-position: 4px;
-        background-size: 142px; }
-    #mugge .mg-menu .mg-menu-link {
-      font-size: 19px;
-      font-size: 1.1875rem;
-      color: #AAABB6;
-      padding: 16px 22px; }
-      #mugge .mg-menu .mg-menu-link:hover, #mugge .mg-menu .mg-menu-link:focus {
+    #mugge .mg-sidebar .mg-sidebar-link {
+      font-size: 15px;
+      font-size: 0.9375rem;
+      color: #5856D6;
+      padding: 10px 8px;
+      width: 176px;
+      white-space: pre-wrap;
+      /* css-3 */
+      white-space: -moz-pre-wrap;
+      /* Mozilla, since 1999 */
+      white-space: -pre-wrap;
+      /* Opera 4-6 */
+      white-space: -o-pre-wrap;
+      /* Opera 7 */
+      word-wrap: break-word;
+      /* Internet Explorer 5.5+ */ }
+      #mugge .mg-sidebar .mg-sidebar-link:hover, #mugge .mg-sidebar .mg-sidebar-link:focus {
         color: #F5F5F5;
         background-color: #444444; }
-      #mugge .mg-menu .mg-menu-link:visited {
+      #mugge .mg-sidebar .mg-sidebar-link:visited {
         color: #AAABB6;
         background-color: none; }
-      #mugge .mg-menu .mg-menu-link.mg-menu-link-active, #mugge .mg-menu .mg-menu-link:active {
+      #mugge .mg-sidebar .mg-sidebar-link.mg-menu-sidebar-active, #mugge .mg-sidebar .mg-sidebar-link:active {
         color: #5856D6; }
-        #mugge .mg-menu .mg-menu-link.mg-menu-link-active:hover, #mugge .mg-menu .mg-menu-link:active:hover {
+        #mugge .mg-sidebar .mg-sidebar-link.mg-menu-sidebar-active:hover, #mugge .mg-sidebar .mg-sidebar-link:active:hover {
           color: #5856D6;
           background-color: #333333; }
-      #mugge .mg-menu .mg-menu-link .mg-menu-icon {
+      #mugge .mg-sidebar .mg-sidebar-link .mg-sidebar-icon {
         padding-right: 18px; }
-    #mugge .mg-menu .mg-menu-close {
-      position: absolute;
-      top: 4px;
-      left: 232px;
-      font-size: 12px;
-      font-size: 0.75rem;
-      color: #4D4D4D; }
-    #mugge .mg-menu .mg-menu-seperator {
+    #mugge .mg-sidebar .mg-sidebar-seperator {
       display: block;
       width: auto;
       max-width: 100%;
       margin: 0.8em 12px 1.2em 12px;
-      border-top: 1px solid #666666; }
-    #mugge .mg-menu .mg-menu-heading {
-      color: #AAABB6;
-      background-color: #282828;
-      background-image: url(../img/logo.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 215px;
+      border-top: 1px solid #DDDDDD; }
+    #mugge .mg-sidebar .mg-sidebar-heading {
+      color: #DDDDDD;
+      text-align: center;
+      background-color: #333333;
       margin: 0;
-      min-height: 58px;
-      font-size: 18px;
-      border-bottom: 2px solid #5856D6; }
+      padding: 23px 18px 3px 18px;
+      height: 38px;
+      font-size: 20px;
+      border-bottom: 2px solid #8D8D8D; }
+    #mugge .mg-sidebar .mg-sidebar-subheading {
+      padding: 8px 8px;
+      font-weight: bold; }
   #mugge .mg-content {
     width: auto;
     max-width: 100%;
+    margin-left: 256px;
     /* ----------- MG-BASE ----------- */ }
     #mugge .mg-content .mg-header {
       width: auto;
       max-width: 100%;
       height: 64px;
       background-color: #5856D6;
-      overflow: hidden; }
+      overflow: hidden;
+      border-bottom: 2px solid #444444; }
       #mugge .mg-content .mg-header .mg-header-title {
         width: auto;
         margin: 0;

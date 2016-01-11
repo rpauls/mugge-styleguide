@@ -1,33 +1,29 @@
 /* ----------- MG-BASE-MENU ----------- */
 
  
-    .mg-menu {
+    .mg-sidebar {
         height: 100%;
         float: left;
         color: $mg-bright-1;
-        background-color: $mg-dark-2;
+        background-color: $mg-white;
         overflow-y: hidden;
-        
-        /* Size-spezific menu elements (BIG)*/
-        &.mg-menu-big {
-            width: 256px;
-        }
-        
-        /* Size-spezific menu elements (SMALL)*/
-        &.mg-menu-small {
-            width: 64px;
-            
-            .mg-menu-heading {
-                background-position: 4px;
-                background-size: 142px;
-            }
-        }
+        position: absolute;
+        z-index: 888;
+        margin-left: 64px;
+        width: 192px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.33);
         
         /* Universal menu elements */
-        .mg-menu-link {
-            @include font-size(19px);
-            color: $mg-grey-4;
-            padding: 16px 22px;
+        .mg-sidebar-link {
+            @include font-size(15px);
+            color: $mg-purple;
+            padding: 10px 8px;
+            width: 176px;
+            white-space: pre-wrap; /* css-3 */    
+            white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+            white-space: -pre-wrap; /* Opera 4-6 */    
+            white-space: -o-pre-wrap; /* Opera 7 */    
+            word-wrap: break-word; /* Internet Explorer 5.5+ */
             
             &:hover, &:focus {
                 color: $mg-bright-0;
@@ -39,7 +35,7 @@
                 background-color: none;
             }
             
-            &.mg-menu-link-active, &:active {
+            &.mg-menu-sidebar-active, &:active {
                 color: $mg-purple;
                 
                 &:hover {
@@ -48,37 +44,32 @@
                 }
             }
             
-            .mg-menu-icon {
+            .mg-sidebar-icon {
                 padding-right: 18px;
             }
         }
         
-       .mg-menu-close {
-            position: absolute;
-            top: 4px;
-            left: 232px;
-            @include font-size(12px);
-            color: $mg-grey-0;
-        }
-        
-        .mg-menu-seperator {
+        .mg-sidebar-seperator {
             display: block;
             width: auto;
             max-width: 100%;
             margin: 0.8em 12px 1.2em 12px;
-            border-top: 1px solid $mg-dark-4;
+            border-top: 1px solid $mg-bright-2;
         }
         
-        .mg-menu-heading {
-            color: $mg-grey-4;
-            background-color: $mg-dark-1;
-            background-image: url(../img/logo.png);
-            background-repeat: no-repeat; 
-            background-position: center;
-            background-size: 215px;
+        .mg-sidebar-heading {
+            color: $mg-bright-2;
+            text-align: center;
+            background-color: $mg-dark-2;
             margin: 0;
-            min-height: 58px;
-            font-size: 18px;
-            border-bottom: 2px solid $mg-purple;
+            padding: 23px 18px 3px 18px;
+            height: 38px;
+            font-size: 20px;
+            border-bottom: 2px solid $mg-grey-1;
+        }
+        
+        .mg-sidebar-subheading {
+            padding: 8px 8px;
+            font-weight: bold;
         }
     }

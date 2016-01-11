@@ -7,6 +7,9 @@
         color: $mg-bright-1;
         background-color: $mg-dark-2;
         overflow-y: hidden;
+        position: absolute;
+        z-index: 999;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.33);
         
         /* Size-spezific menu elements (BIG)*/
         &.mg-menu-big {
@@ -87,7 +90,8 @@
             background-position: center;
             background-size: 215px;
             margin: 0;
-            min-height: 58px;
+            padding: 3px 18px 3px 18px;
+            height: 58px;
             font-size: 18px;
             border-bottom: 2px solid $mg-purple;
         }
