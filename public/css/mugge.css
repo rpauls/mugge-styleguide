@@ -848,6 +848,20 @@ html {
   *     }
   *
   */
+/*
+  * --- BOX SHADOW ---
+  *
+  * DESCRIPTION:
+  *
+  *     This mixin ensures cross browser box shadows.
+  *
+  * EXAMPLE:
+  *
+  *     .shadow {
+  *         @include box-shadow(0 2px 5px 0 rgba(0,0,0,.33));
+  *     }
+  *
+  */
 /* ----------- Color ----------- */
 /* -------- MUGGE VIEWS ---------- */
 /* ----------- MG-BASE ----------- */
@@ -995,7 +1009,9 @@ html {
       height: 64px;
       background-color: #5856D6;
       overflow: hidden;
-      border-bottom: 2px solid #444444; }
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.33);
+      -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.33);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.33); }
       #mugge .mg-content .mg-header .mg-header-title {
         width: auto;
         margin: 0;

@@ -132,3 +132,25 @@
     $opacity-ie: $opacity * 100;
     filter: alpha(opacity=$opacity-ie); //IE8
 }
+
+
+ /*
+  * --- BOX SHADOW ---
+  *
+  * DESCRIPTION:
+  *
+  *     This mixin ensures cross browser box shadows.
+  *
+  * EXAMPLE:
+  *
+  *     .shadow {
+  *         @include box-shadow(0 2px 5px 0 rgba(0,0,0,.33));
+  *     }
+  *
+  */
+
+@mixin box-shadow($args...) {
+    -webkit-box-shadow: $args;
+    -moz-box-shadow: $args;
+    box-shadow: $args;
+}

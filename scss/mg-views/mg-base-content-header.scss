@@ -6,7 +6,7 @@
             height: 64px;
             background-color: $mg-purple;
             overflow: hidden;
-            border-bottom: 2px solid $mg-dark-3;
+            @include box-shadow(0 2px 5px 0 rgba(0,0,0,.33));
             
             .mg-header-title {
                 width: auto;
