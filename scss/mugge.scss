@@ -18,9 +18,11 @@
 @import './ext-font/lineto-akkurat-web.scss';
 
 /* ------- MUGGE ELEMENTS -------- */ 
-@import './mg-elements/mg-main.scss';
-@import './mg-elements/mg-mixins.scss';
 @import './mg-elements/mg-colors.scss';
+@import './mg-elements/mg-mixins.scss';
+
+@import './mg-elements/mg-main.scss';
+@import './mg-elements/mg-table.scss';
 
 /* -------- MUGGE VIEWS ---------- */
 @import './mg-views/mg-base.scss';

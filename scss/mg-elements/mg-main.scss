@@ -5,6 +5,7 @@ body, html {
 	padding: 0;
     font-family: 'Akkurat', Arial, sans-serif;
 	font-size: 100%;
+    color: $mg-grey-0;
 	min-width: 200px;
 	word-wrap: break-word;
     -ms-word-wrap: break-word;
@@ -14,4 +15,62 @@ body, html {
 html {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+/* Helper classes - Text */
+
+.mg-text-left {
+    text-align: left;
+}
+
+.mg-text-center {
+    text-align: center;
+}
+
+.mg-text-right {
+    text-align: right;
+}
+
+.mg-text-uppercase {
+    text-transform: uppercase;
+}
+
+.mg-text-lowercase {
+    text-transform: lowercase;
+}
+
+/* Helper classes - Container */
+
+.mg-div-center {
+    margin: 0 auto;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
 }
