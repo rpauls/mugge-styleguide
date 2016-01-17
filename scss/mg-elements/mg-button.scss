@@ -1,0 +1,130 @@
+/* ----------- Buttons ----------- */
+
+.mg-button-default {
+    @include font-size(14px);
+    font-weight: bold;
+    line-height: 36px;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    outline: 0;
+    padding: 0 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .5px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 2px;
+    color: $mg-white;
+    background-color: $mg-purple;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    @extend .shadow-z-1;
+    
+    &:hover { 
+        background-color: lighten($mg-purple, 5%); 
+        @extend .shadow-z-1-half;
+    }
+    
+    &.disabled, &:disabled {
+        box-shadow: none;
+        background-color: $mg-grey-5 !important;
+        color: $mg-dark-5 !important;
+        cursor: default;
+        
+        * { pointer-events: none; }
+        
+        &:hover {
+            background-color: $mg-grey-5 !important;
+            color: $mg-dark-5 !important;
+        }        
+    }    
+}
+
+.mg-button-flat {
+    background-color: transparent;
+    @include font-size(14px);
+    font-weight: bold;
+    line-height: 36px;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    outline: 0;
+    padding: 0 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .5px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 2px;
+    color: $mg-purple;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    &.disabled, &:disabled {
+        color: $mg-dark-5 !important;
+        cursor: default;
+        
+        * { pointer-events: none; }      
+    }    
+}
+
+.mg-button-circle {
+    display: inline-block;
+    color: $mg-white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1111;
+    width: 55px;
+    line-height: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    background-color: $mg-purple;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+        
+    @extend .shadow-z-1;
+    
+    i, span {
+        width: inherit;
+        display: inline-block;
+        text-align: center;
+        color: $mg-white;
+        @include font-size(16px);
+        line-height: inherit;
+    }
+    
+    &:hover { 
+        background-color: lighten($mg-purple, 5%); 
+         @extend .shadow-z-1-half;
+    }
+    
+    &.disabled, &:disabled {
+        box-shadow: none;
+        background-color: $mg-grey-5 !important;
+        color: $mg-dark-5 !important;
+        cursor: default;
+        
+        * { pointer-events: none; }
+        
+        &:hover {
+            background-color: $mg-grey-5 !important;
+            color: $mg-dark-5 !important;
+        }        
+    } 
+    
+}
+/* Fix for html button element*/
+button.mg-button.circle { border: none; }
+.mg-button-block { display: block; }
