@@ -1130,7 +1130,21 @@ h5 {
       font-weight: bold;
       text-align: right; }
 
-/* ----------- Input ----------- */
+/* ----------- Forms & Inputs ----------- */
+::-webkit-input-placeholder {
+  color: #8D8D8D; }
+
+:-moz-placeholder {
+  color: #8D8D8D;
+  /* Firefox 18- */ }
+
+::-moz-placeholder {
+  color: #8D8D8D;
+  /* Firefox 19+ */ }
+
+:-ms-input-placeholder {
+  color: #8D8D8D; }
+
 /* ----------- Buttons ----------- */
 .mg-button-default {
   font-size: 14px;
