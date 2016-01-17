@@ -12,9 +12,7 @@
         box-shadow: 0 2px 5px 0 rgba(0,0,0,.33);
         
         /* Size-spezific menu elements (BIG)*/
-        &.mg-menu-big {
-            width: 256px;
-        }
+        &.mg-menu-big {  width: 256px; }
         
         /* Size-spezific menu elements (SMALL)*/
         &.mg-menu-small {
@@ -61,9 +59,7 @@
                 }
             }
             
-            .mg-menu-icon {
-                padding-right: 18px;
-            }
+            .mg-menu-icon { padding-right: 18px; }
         }
         
        .mg-menu-close {
