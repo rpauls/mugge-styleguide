@@ -909,6 +909,9 @@ html {
 .mg-div-center {
   margin: 0 auto; }
 
+.mg-div-box {
+  padding: 4px; }
+
 /* Headings */
 h1 {
   font-size: 24px; }
@@ -1163,7 +1166,7 @@ textarea.mg-textarea {
   border-bottom: 1px solid #DFDFDF;
   border-radius: 0;
   outline: none;
-  height: 3em;
+  height: 2.5em;
   width: 100%;
   font-size: 16px;
   font-size: 1rem;
@@ -1403,41 +1406,11 @@ textarea.mg-textarea {
   .input-field label {
     color: #DFDFDF;
     position: absolute;
-    top: 0.8em;
-    left: 0.75em;
-    font-size: 16px;
-    font-size: 1rem;
-    cursor: text;
-    transition: .2s ease-out; }
-  .input-field label.active {
+    top: -0.75em;
+    left: 0;
     font-size: 14px;
     font-size: 0.875rem;
-    transform: translateY(-140%); }
-  .input-field .prefix {
-    position: absolute;
-    width: 3em;
-    font-size: 32px;
-    font-size: 2rem;
-    transition: color .2s; }
-    .input-field .prefix.active {
-      color: #5856D6; }
-  .input-field .prefix ~ input,
-  .input-field .prefix ~ textarea {
-    margin-left: 3em;
-    width: 92%;
-    width: calc(100% - 3em); }
-  .input-field .prefix ~ textarea {
-    padding-top: .8em; }
-  .input-field .prefix ~ label {
-    margin-left: 3em; }
-  @media (max-width: 48em) {
-    .input-field .prefix ~ input {
-      width: 86%;
-      width: calc(100% - 3em); } }
-  @media (min-width: 28em) {
-    .input-field .prefix ~ input {
-      width: 80%;
-      width: calc(100% - 3em); } }
+    cursor: text; }
 
 textarea {
   width: 100%;

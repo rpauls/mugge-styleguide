@@ -26,7 +26,7 @@ textarea.mg-textarea {
     border-bottom: 1px solid $mg-grey-5;
     border-radius: 0;
     outline: none;
-    height: 3em;
+    height: 2.5em;
     width: 100%;
     @include font-size(16px);
     margin: 0 0 15px 0;
@@ -102,48 +102,11 @@ textarea.mg-textarea {
    label {
         color: $mg-grey-5;
         position: absolute;
-        top: 0.8em;
-        left: 0.75em;
-        @include font-size(16px);
-        cursor: text;
-        transition: .2s ease-out;
-    }
-    label.active {
+        top: -0.75em;
+        left: 0;
         @include font-size(14px);
-        transform: translateY(-140%);
+        cursor: text;
     }
-    
-    // Prefix Icons
-    .prefix {
-        position: absolute;
-        width: 3em;
-        @include font-size(32px);
-        transition: color .2s;
-
-        &.active { color: $mg-purple; }
-    }
-    .prefix ~ input,
-    .prefix ~ textarea {
-        margin-left: 3em;
-        width: 92%;
-        width: calc(100% - 3em);
-    }
-    .prefix ~ textarea { padding-top: .8em; }
-    .prefix ~ label { margin-left: 3em; }
-
-    @media (max-width: 48em) {
-        .prefix ~ input {
-        width: 86%;
-        width: calc(100% - 3em);
-        }
-    }
-    @media (min-width: 28em) {
-        .prefix ~ input {
-        width: 80%;
-        width: calc(100% - 3em);
-        }
-    }
-    
 }
 
 // Default textarea
