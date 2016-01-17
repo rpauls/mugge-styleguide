@@ -68,6 +68,7 @@
             left: 232px;
             @include font-size(12px);
             color: $mg-grey-0;
+            cursor: pointer;
         }
         
         .mg-menu-seperator {

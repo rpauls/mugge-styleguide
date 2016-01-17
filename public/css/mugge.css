@@ -6,10 +6,35 @@
  *  ----------------------------------------
  */
 /*
-  *                 --- NOTE ---
+  *                 --- NOTES ---
   *
-  *     " mg-* " serves as a universal class prefix 
-  *     for all in MuggeKMS used classes.
+  *     Naming convention:
+  *         " mg-* " serves as a universal class prefix 
+  *         for all in MuggeKMS used classes. All class
+  *         names follow the following structure:
+  *         
+  *             "mg" - "categorie" - "name"
+  *             
+  *         For Example the Modal footer container should
+  *         have the following correct class name:
+  *
+  *             mg-modal-footer
+  *
+  *         Contained sub-elements don't need to have a
+  *         second categorie. A child of the Modal footer 
+  *         should have a own name, but "modal" as categorie.
+  *         For Example:
+  * 
+  *             INCORRECT:  mg-modal-footer-button
+  *             CORRECT:    mg-modal-button
+  *
+  *
+  *     Breaking points: 
+  *         -   xs: 28em
+  *         -   sm: 35.5em
+  *         -   md: 48em    (Usually the smallest used in Mugge!)
+  *         -   lg: 68em
+  *         -   xl: 86em
   *
   */
 /* ------- 3RD PARTY ELEMENTS -------- */
@@ -756,7 +781,7 @@
   font-style: normal; }
 
 /* ------- MUGGE ELEMENTS -------- */
-/* ----------- Color ----------- */
+/* ----------- Colors ----------- */
 /* ----------- Mixins ----------- */
 /*
   * --- REM FONT SIZE WITh PX FALLBACK ---
@@ -908,7 +933,7 @@ h5 {
   text-transform: uppercase;
   font-weight: normal; }
 
-/* Tables */
+/* ----------- Tables ----------- */
 .mg-table {
   border: none; }
   .mg-table thead {
@@ -1017,6 +1042,50 @@ h5 {
       .mg-table.mg-table-responsive.mg-table-high > .tbody > .tr > .td {
         padding: 0.6em; } }
 
+/* ----------- Modals ----------- */
+.mg-modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 10001;
+  background-color: rgba(255, 255, 255, 0.5); }
+  .mg-modal .mg-modal-container {
+    position: relative;
+    width: 300px;
+    height: auto;
+    max-height: 50%;
+    margin: 60px auto 0 auto;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD; }
+    .mg-modal .mg-modal-container .mg-modal-close {
+      position: absolute;
+      top: 4px;
+      right: 6px;
+      font-size: 12px;
+      font-size: 0.75rem;
+      color: #DDDDDD;
+      cursor: pointer; }
+      .mg-modal .mg-modal-container .mg-modal-close:hover {
+        color: #7D7D7D; }
+    .mg-modal .mg-modal-container .mg-modal-header {
+      height: 55px;
+      line-height: 55px;
+      border-bottom: 1px solid #DDDDDD; }
+      .mg-modal .mg-modal-container .mg-modal-header > h3 {
+        margin: 0; }
+    .mg-modal .mg-modal-container .mg-modal-content {
+      min-height: 50px;
+      padding: 15px; }
+    .mg-modal .mg-modal-container .mg-modal-footer {
+      height: 55px;
+      line-height: 55px;
+      padding: 0 15px;
+      border-top: 1px solid #DDDDDD;
+      font-weight: bold;
+      text-align: right; }
+
 /* -------- MUGGE VIEWS ---------- */
 /* ----------- MG-BASE ----------- */
 #mugge {
@@ -1074,7 +1143,8 @@ h5 {
       left: 232px;
       font-size: 12px;
       font-size: 0.75rem;
-      color: #4D4D4D; }
+      color: #4D4D4D;
+      cursor: pointer; }
     #mugge .mg-menu .mg-menu-seperator {
       display: block;
       width: auto;
