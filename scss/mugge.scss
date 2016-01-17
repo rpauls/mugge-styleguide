@@ -6,10 +6,35 @@
  */
  
  /*
-  *                 --- NOTE ---
+  *                 --- NOTES ---
   *
-  *     " mg-* " serves as a universal class prefix 
-  *     for all in MuggeKMS used classes.
+  *     Naming convention:
+  *         " mg-* " serves as a universal class prefix 
+  *         for all in MuggeKMS used classes. All class
+  *         names follow the following structure:
+  *         
+  *             "mg" - "categorie" - "name"
+  *             
+  *         For Example the Modal footer container should
+  *         have the following correct class name:
+  *
+  *             mg-modal-footer
+  *
+  *         Contained sub-elements don't need to have a
+  *         second categorie. A child of the Modal footer 
+  *         should have a own name, but "modal" as categorie.
+  *         For Example:
+  * 
+  *             INCORRECT:  mg-modal-footer-button
+  *             CORRECT:    mg-modal-button
+  *
+  *
+  *     Breaking points: 
+  *         -   xs: 28em
+  *         -   sm: 35.5em
+  *         -   md: 48em    (Usually the smallest used in Mugge!)
+  *         -   lg: 68em
+  *         -   xl: 86em
   *
   */
   
@@ -23,6 +48,7 @@
 
 @import './mg-elements/mg-main.scss';
 @import './mg-elements/mg-table.scss';
+@import './mg-elements/mg-modal.scss';
 
 /* -------- MUGGE VIEWS ---------- */
 @import './mg-views/mg-base.scss';
