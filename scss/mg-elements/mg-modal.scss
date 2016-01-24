@@ -17,6 +17,9 @@
         margin: 60px auto 0 auto;
         background-color: $mg-white;
         border: 1px solid $mg-bright-2;
+        border-radius: 2px;
+        
+        @extend shadow-z-4;
         
         
         .mg-modal-close {
@@ -33,7 +36,7 @@
         .mg-modal-header {
             height: 55px;
             line-height: 55px;
-            border-bottom: 1px solid $mg-bright-2;
+            border-bottom: 0px solid $mg-bright-2;
             
             > h3 {
                 margin: 0;
@@ -49,7 +52,7 @@
             height: 55px;
             line-height: 55px;
             padding: 0 15px;
-            border-top: 1px solid $mg-bright-2;
+            border-top: 0px solid $mg-bright-2;
             font-weight: bold;
             text-align: right;
         }     

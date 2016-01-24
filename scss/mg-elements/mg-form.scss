@@ -1,5 +1,20 @@
 /* ----------- Forms & Inputs ----------- */
 
+/* Remove Focus Boxes */
+select:focus {
+  outline: 1px solid lighten($mg-purple, 47%);
+}
+button:focus {
+  outline: none;
+  background-color: lighten($mg-purple, 4%);
+}
+
+label {
+  font-size: 0.8em;
+  color: $mg-grey-2;
+}
+
+/*** Text Inputs & Textarea ***/
 // Style Placeholders
 ::-webkit-input-placeholder { color: $mg-grey-1; }
 :-moz-placeholder { color: $mg-grey-1; /* Firefox 18- */ }

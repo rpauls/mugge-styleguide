@@ -1105,7 +1105,8 @@ h5 {
     max-height: 50%;
     margin: 60px auto 0 auto;
     background-color: #FFFFFF;
-    border: 1px solid #DDDDDD; }
+    border: 1px solid #DDDDDD;
+    border-radius: 2px; }
     .mg-modal .mg-modal-container .mg-modal-close {
       position: absolute;
       top: 4px;
@@ -1119,7 +1120,7 @@ h5 {
     .mg-modal .mg-modal-container .mg-modal-header {
       height: 55px;
       line-height: 55px;
-      border-bottom: 1px solid #DDDDDD; }
+      border-bottom: 0px solid #DDDDDD; }
       .mg-modal .mg-modal-container .mg-modal-header > h3 {
         margin: 0; }
     .mg-modal .mg-modal-container .mg-modal-content {
@@ -1129,11 +1130,24 @@ h5 {
       height: 55px;
       line-height: 55px;
       padding: 0 15px;
-      border-top: 1px solid #DDDDDD;
+      border-top: 0px solid #DDDDDD;
       font-weight: bold;
       text-align: right; }
 
 /* ----------- Forms & Inputs ----------- */
+/* Remove Focus Boxes */
+select:focus {
+  outline: 1px solid white; }
+
+button:focus {
+  outline: none;
+  background-color: #6866da; }
+
+label {
+  font-size: 0.8em;
+  color: #7D7D7D; }
+
+/*** Text Inputs & Textarea ***/
 ::-webkit-input-placeholder {
   color: #8D8D8D; }
 
