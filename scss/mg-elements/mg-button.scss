@@ -21,6 +21,7 @@
     background-color: $mg-purple;
     white-space: nowrap;
     overflow: hidden;
+    transition: .2s ease-out;
     
     @extend .shadow-z-1;
     
@@ -93,6 +94,7 @@
     vertical-align: middle;
     white-space: nowrap;
     overflow: hidden;
+    transition: .3s;
         
     @extend .shadow-z-1;
     

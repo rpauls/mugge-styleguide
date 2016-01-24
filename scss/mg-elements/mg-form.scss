@@ -33,6 +33,7 @@ textarea.mg-textarea {
     padding: 0;
     box-shadow: none;
     box-sizing: content-box;
+    transition: all .3s;
     
     // Disabled input style
     &:disabled, &[readonly="readonly"] {
@@ -106,6 +107,7 @@ textarea.mg-textarea {
         left: 0;
         @include font-size(14px);
         cursor: text;
+        transition: .2s ease-out;
     }
 }
 

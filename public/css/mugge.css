@@ -1174,7 +1174,8 @@ textarea.mg-textarea {
   margin: 0 0 15px 0;
   padding: 0;
   box-shadow: none;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  transition: all .3s; }
   input:not([type]):disabled, input:not([type])[readonly="readonly"],
   input[type=text]:disabled,
   input[type=text][readonly="readonly"],
@@ -1411,7 +1412,8 @@ textarea.mg-textarea {
     left: 0;
     font-size: 14px;
     font-size: 0.875rem;
-    cursor: text; }
+    cursor: text;
+    transition: .2s ease-out; }
 
 textarea {
   width: 100%;
@@ -1894,7 +1896,8 @@ select {
   color: #FFFFFF;
   background-color: #5856D6;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: .2s ease-out; }
   .mg-button-default:hover {
     background-color: #6c6bdb; }
   .mg-button-default.disabled, .mg-button-default:disabled {
@@ -1954,7 +1957,8 @@ select {
   cursor: pointer;
   vertical-align: middle;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: .3s; }
   .mg-button-circle i, .mg-button-circle span {
     width: inherit;
     display: inline-block;
