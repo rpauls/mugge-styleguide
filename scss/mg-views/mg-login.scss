@@ -1,0 +1,101 @@
+.login {
+    min-height: 100%;
+    width: 100%;
+    background: url('../img/bg3.jpg') no-repeat bottom center fixed;
+    background-size: cover;
+}
+
+.mg-login {
+    border: none;
+    text-align: center;
+    background: transparent;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -227.5px;
+    padding: 0;
+    width: 455px;
+    
+    img {
+        margin-top: 25px;
+        margin-top: 25px;
+    }
+    
+    .mg-login-wrapper {
+        background: $mg-white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px; 
+        
+        fieldset {
+            border: none;
+            
+            > label {
+                display: none;
+            }
+            
+            > input {
+                margin-top: 20px;
+            }
+            
+            > a {
+                text-decoration: none;
+                font-size: 14px;
+            }
+        }
+    }
+    
+    .mg-login-button {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+.mg-login-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: $mg-dark-0;
+    text-align: center;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    #mg-login-nav {
+        list-style: none;
+        font-size: 12px;
+        line-height: 14px;
+        color: $mg-white;
+        font-weight: normal;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 0;
+        padding-right: 0;
+        
+        > li {
+            float: none;
+            display: inline-block;
+            margin-left: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            
+            > span {
+                color: $mg-grey-0;
+            }
+            
+            > a {
+                text-decoration: none;
+                color: $mg-white;
+                
+                &:hover {
+                    color: $mg-grey-1;
+                }
+            }
+        }
+    }
+}

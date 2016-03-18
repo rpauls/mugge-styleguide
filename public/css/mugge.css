@@ -873,6 +873,20 @@
   *     }
   *
   */
+/*
+  * --- BLUR ---
+  *
+  * DESCRIPTION:
+  *
+  *     This mixin ensures cross browser blur capabilities.
+  *
+  * EXAMPLE:
+  *
+  *     .shadow {
+  *         @include blur(5px);
+  *     }
+  *
+  */
 body, html {
   min-height: 100% !important;
   height: 100%;
@@ -2002,6 +2016,81 @@ button.mg-button.circle {
   display: block; }
 
 /* -------- MUGGE VIEWS ---------- */
+.login {
+  min-height: 100%;
+  width: 100%;
+  background: url("../img/bg3.jpg") no-repeat bottom center fixed;
+  background-size: cover; }
+
+.mg-login {
+  border: none;
+  text-align: center;
+  background: transparent;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px;
+  margin-left: -227.5px;
+  padding: 0;
+  width: 455px; }
+  .mg-login img {
+    margin-top: 25px;
+    margin-top: 25px; }
+  .mg-login .mg-login-wrapper {
+    background: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .mg-login .mg-login-wrapper fieldset {
+      border: none; }
+      .mg-login .mg-login-wrapper fieldset > label {
+        display: none; }
+      .mg-login .mg-login-wrapper fieldset > input {
+        margin-top: 20px; }
+      .mg-login .mg-login-wrapper fieldset > a {
+        text-decoration: none;
+        font-size: 14px; }
+  .mg-login .mg-login-button {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100%; }
+
+.mg-login-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #222222;
+  text-align: center;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .mg-login-footer #mg-login-nav {
+    list-style: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0;
+    padding-right: 0; }
+    .mg-login-footer #mg-login-nav > li {
+      float: none;
+      display: inline-block;
+      margin-left: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 2px;
+      padding-bottom: 2px; }
+      .mg-login-footer #mg-login-nav > li > span {
+        color: #4D4D4D; }
+      .mg-login-footer #mg-login-nav > li > a {
+        text-decoration: none;
+        color: #FFFFFF; }
+        .mg-login-footer #mg-login-nav > li > a:hover {
+          color: #8D8D8D; }
+
 /* ----------- MG-BASE ----------- */
 #mugge {
   height: 100%;
